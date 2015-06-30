@@ -1,0 +1,287 @@
+*{
+	margin:0;
+	padding: 0;
+}
+li{
+	list-style:none;
+}
+strong{
+	font-style: normal;
+	font-weight: normal;
+}
+html{
+	overflow-y:scroll; 
+}
+body{
+	background:url(../images/qwe.jpg) no-repeat top center #E0E0E0;
+	background-size:100% 72px; 
+	position: relative; 
+	width: 100%;
+	height: 100%;
+	font-family: Arial,Verdana,"宋体","微软雅黑",Sans-serif;
+	font-size: 18px;
+
+}
+
+.layout{
+	width:70%;
+	margin:0 auto;
+	text-align: center;
+
+}
+.nameLi span.hide{
+	display: none;
+}
+
+#header,#nameResultList{
+	padding-top: 10px;
+}
+.tit{
+	text-shadow:2px 2px 2px #ccc;
+}
+.tit h1{
+	font-size: 38px;
+	color:#007;
+}
+.tit h2{
+	font-size: 14px;
+	color:#343434;
+}
+.options{
+	font-size: 20px;
+	height: 80px;
+	line-height: 80px;
+	margin:8px auto;
+	border:1px solid #ccc;
+	border-radius: 8px;
+	box-shadow: 1px 1px 2px #999;
+	cursor: pointer;
+
+	-moz-transition:all .3s linear;
+	-webkit-transition:all .3s linear;
+	-ms-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear;
+}
+#pinyinSearch,#nameSearch,#numSearch{
+	float:left;
+	margin:1px 0;
+	height:28px;
+	width:75%;
+	border-radius:3px;
+	font-size:16px;
+	padding:8px;
+	line-height:28px;
+}
+
+.searchBtn{
+	text-decoration:none;
+	color:#fff;
+	font-weight:bold;
+	float:right;
+	width:21%;
+	border-radius:3px;
+	height:48px;
+	background:#d2d2d2;
+	font-size:16px;
+	margin:1px 0;
+}
+.searchBtn:hover{
+	background: #e1e1e1;
+}
+.hideBtn{
+	display: inline-block;
+	width:18px;
+	height: 18px;
+	font-size: 25px;
+	color:#333;
+	line-height: 20px;
+	border:1px solid #333;
+	cursor: pointer;
+	border-radius: 9px;
+	overflow: hidden;
+}
+.hideBtn:hover{
+	color:#ccc;
+	border:none;
+}
+.directories{
+	border:1px solid #eee;
+	margin: 4px auto;
+	height:0;
+	line-height: 30px;
+	width: 200px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #666;
+	cursor: pointer;
+
+	-moz-transition:all .3s linear;
+	-webkit-transition:all .3s linear;
+	-ms-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear;
+}
+.directories:hover{
+	background:#eee;
+	box-shadow: 5px 5px 2px #444;
+
+}
+.tip{
+	color:#666;
+}
+.namelist{
+	min-height:40px;
+	_height:40px;
+}
+.nameLi{
+	border:1px solid #eee;
+	margin: 5px auto;
+	height:40px;
+	line-height: 35px;
+	width: 70%;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #666;
+	cursor: pointer;
+	padding-left:10px;
+
+	-moz-transition:all .3s linear;
+	-webkit-transition:all .3s linear;
+	-ms-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear;
+}
+input[id=name],input[id=phoneNum]{
+	float:left;
+	margin:1px 0;
+	height:28px;
+	width:75%;
+	border-radius:3px;
+	font-size:16px;
+	padding:8px;
+	line-height:28px;
+
+}
+.lable{
+	text-decoration:none;
+	color:#fff;
+	font-weight:bold;
+	float:right;
+	width:21%;
+	border-radius:3px;
+	height:48px;
+	background:#d2d2d2;
+	font-size:16px;
+	margin:1px 0;
+}
+.addBtn{
+	border:1px solid #eee;
+	margin: 4px auto;
+	height:50px;
+	line-height: 50px;
+	width: 400px;
+	font-size: 40px;
+	background: #456;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #666;
+	cursor: pointer;
+}
+.addBtn a{
+	text-decoration:none;
+	color: #fff;
+	text-shadow:7px 7px 7px #333;
+}
+.addBtn:hover{
+	background: #816;
+	border-radius: 10px;
+}
+.chooseBtnWrap{
+	width:500px;
+	height: 30px;
+	margin:0 auto;
+}
+.chooseBtn{/*完成返回和加入群组按钮*/
+	display: inline-block;
+	padding:2px;
+	width:100px;
+	height: 100%;
+	line-height: 30px;
+	text-align: center;
+	text-decoration: none;
+	background: #505050;
+	color:#fff;
+	border-radius: 10px;
+	font-size: 16px;
+	-moz-transition:all .3s linear;
+	-webkit-transition:all .3s linear;
+	-ms-transition:all .3s linear;
+	-o-transition:all .3s linear;
+	transition:all .3s linear;
+}
+.chooseBtn:hover{
+	background: #c1c;
+}
+.btnGroup{
+	float: right;
+}
+.btnBack{
+	
+	float: left;
+}
+
+.message{
+	width:290px;
+	height: 100px;
+	padding:5px;
+	font-size: 20px;
+	line-height: 20px;
+	resize:none;
+	overflow: hidden;
+}
+.messageBtn{
+	background: #456;
+	width:130px;
+	margin:8px auto;
+	border-radius: 8px;
+	height: 40px;
+	-moz-transition:all .2s linear;
+	-webkit-transition:all .2s linear;
+	-ms-transition:all .2s linear;
+	-o-transition:all .2s linear;
+	transition:all .2s linear;
+}
+.messageBtn:hover{
+	background: #703;
+	border-radius: 15px;
+	box-shadow: 1px 1px 2px #636;
+}
+.messageBtn a{
+	display: inline-block;
+	margin: 0 auto;
+	line-height: 40px;
+	text-decoration: none;
+	color:#fff;
+}
+.nameLi:hover{
+	background:#eee;
+	box-shadow: 5px 5px 2px #444;
+}
+.nameLi span{
+	display: inline-block;
+	width:20%;
+}
+.name{
+	font-weight: bold;
+	width:40px;
+	background: #6f6f6f;
+	text-align: center;
+	color: #eee;
+	margin: 0 5px;
+	border-radius:3px;
+}
+.name:hover{
+	background: #7f7f7f;
+}
+
+#footer{
+	padding:10px;
+}
