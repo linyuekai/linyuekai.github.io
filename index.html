@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
-	<title>Document</title>
+	<title>我的主页</title>
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-1.11.3.min.js"></script>
@@ -28,17 +28,24 @@
 <div class="draw draw-9"><p>页</p></div>
 <div class="draw draw-10"></div>
 <script>
-	$(".draw").css("background-size", $("body").width()+"px "+$("body").height()+"px").each(function(i,ele){
-		var index = i+1;
-		$(".draw-"+index).css({
-			"background-position": (10*i)+"% 0",
-			"left": (10*i)+"%"
+	var img = new image();
+	img.src="../images/1.jpg";
+	img.onload = function(){
+		$(".draw").css("background","url("+img.src+") no-repeat");
+		$("#loading").hide();
+		$(".draw").css("background-size", $("body").width()+"px "+$("body").height()+"px").each(function(i,ele){
+			var index = i+1;
+			$(".draw-"+index).css({
+				"background-position": (10*i)+"% 0",
+				"left": (10*i)+"%"
+			});
 		});
-	});
-	setTimeout(function(){
-		$(".draw:even").addClass("draw-even");
-		$(".draw:odd").addClass("draw-odd");
-	},1600);
+		setTimeout(function(){
+			$(".draw:even").addClass("draw-even");
+			$(".draw:odd").addClass("draw-odd");
+		},1600);
+	}
+	
 </script>
 
 <div class="header">
