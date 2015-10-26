@@ -16,8 +16,7 @@ body{
 	left:0;
 	background:#fff;
 	text-align: center;
-
-	display: none;
+	z-index:99;
 }
 #loading>div{
 	width:100%;
@@ -56,7 +55,6 @@ body{
 	height: 100%;
 	position: absolute;
 	top:0;
-	background: url(../images/1.jpg) no-repeat;
 
 	transition:all 1.5s; 
 	-webkit-transition:all 1.5s; 
