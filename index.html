@@ -32,7 +32,7 @@
 	img.src="images/1.jpg";
 	img.onload = function(){
 		$(".draw").css("background","url("+img.src+") no-repeat");
-		$("#loading").hide();
+		$("#loading").fadeOut();
 		$(".draw").css("background-size", $("body").width()+"px "+$("body").height()+"px").each(function(i,ele){
 			var index = i+1;
 			$(".draw-"+index).css({
@@ -43,7 +43,7 @@
 		setTimeout(function(){
 			$(".draw:even").addClass("draw-even");
 			$(".draw:odd").addClass("draw-odd");
-		},2000);
+		},1800);
 	}
 </script>
 
