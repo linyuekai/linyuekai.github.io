@@ -28,8 +28,8 @@
 <div class="draw draw-9"><p>页</p></div>
 <div class="draw draw-10"></div>
 <script>
-	var img = new image();
-	img.src="../images/1.jpg";
+	var img = new Image();
+	img.src="images/1.jpg";
 	img.onload = function(){
 		$(".draw").css("background","url("+img.src+") no-repeat");
 		$("#loading").hide();
