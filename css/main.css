@@ -17,6 +17,8 @@ body{
 	background:#fff;
 	text-align: center;
 	z-index:99;
+
+	display: none;
 }
 #loading>div{
 	width:100%;
