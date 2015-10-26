@@ -2,9 +2,52 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>你好,世界！</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+	<title>Document</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/jquery-1.11.3.min.js"></script>
 </head>
 <body>
-	<h1 style="text-align: center">Hello world!</h1>
+<div id="loading">
+	<div>LOADING<br>
+		<p class="progress">
+			>>>>>>>>>>>>
+		</p>
+		<div class="mask"></div>
+	</div>
+</div>
+<div class="draw draw-1"></div>
+<div class="draw draw-2"><p>欢</p></div>
+<div class="draw draw-3"><p>迎</p></div>
+<div class="draw draw-4"><p>来</p></div>
+<div class="draw draw-5"><p>到</p></div>
+<div class="draw draw-6"><p>我</p></div>
+<div class="draw draw-7"><p>的</p></div>
+<div class="draw draw-8"><p>主</p></div>
+<div class="draw draw-9"><p>页</p></div>
+<div class="draw draw-10"></div>
+<script>
+	$(".draw").css("background-size", $("body").width()+"px "+$("body").height()+"px").each(function(i,ele){
+		var index = i+1;
+		$(".draw-"+index).css({
+			"background-position": (10*i)+"% 0",
+			"left": (10*i)+"%"
+		});
+	});
+	setTimeout(function(){
+		$(".draw:even").addClass("draw-even");
+		$(".draw:odd").addClass("draw-odd");
+	},1600);
+</script>
+
+<div class="header">
+	<div class="container-fluid text-center head-con">
+		<h1>你好，欢迎莅临我的主页</h1>
+		<p class="small">这里存放着本人的一些前端Demo以及作品,以供备查</p>
+	</div>
+</div>
+
+
 </body>
 </html>

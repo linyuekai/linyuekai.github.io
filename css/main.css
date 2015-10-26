@@ -1,0 +1,89 @@
+html,body{
+	width:100%;
+	height: 100%;
+}
+body{
+
+	position: relative;
+	overflow: hidden;
+}
+
+#loading{
+	width:100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left:0;
+	background:#fff;
+	text-align: center;
+
+	display: none;
+}
+#loading>div{
+	width:100%;
+	line-height: 50px;
+	position: absolute;
+	top:50%;
+	margin-top: -25px;
+	
+	font-family: '微软雅黑';
+	font-size: 48px;
+	font-weight: bold;
+	color:rgb(162, 204, 187);
+}
+#loading>div p.progress{
+	width:310px;
+	height: 32px;
+	line-height: 32px;
+
+	background-color: rgb(162, 204, 187);
+	border-radius: 16px;
+	color:#fff;
+	margin:0 auto;
+	font-size: 32px;
+	border:1px solid #aaa;
+}
+#loading>div>div.mask{
+	width:100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+.draw{
+	width:10%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	background: url(../images/1.jpg) no-repeat;
+
+	transition:all 1.5s; 
+	-webkit-transition:all 1.5s; 
+	-moz-transition:all 1.5s; 
+	-ms-transition:all 1.5s; 
+}
+.draw>p{
+	text-align: center;
+	width:100%;
+	height: 50px;
+	line-height: 50px;
+	color:yellow;
+
+	font-size: 48px;
+	position: absolute;
+	top:50%;
+	margin-top: -25px;
+
+}
+.draw-even{
+	top:100%;
+}
+.draw-odd{
+	top:-100%;
+}
+
+.head-con{
+	height: 200px;
+	
+}
