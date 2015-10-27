@@ -102,6 +102,7 @@ body{
 	top:0;
 	z-index: 88;
 	background-size:100% 100%;
+	cursor:pointer;
 
 	transition:all 1s; 
 	-webkit-transition:all 1s; 
@@ -127,6 +128,12 @@ body{
 	-webkit-text-shadow:5px 15px 15px #000, 5px 5px 5px blue, 5px 5px 5px #fff;
 	-ms-text-shadow:5px 5px 15px #000, 5px 5px 5px blue, 5px 5px 5px #fff;
 }
+.draw span{
+	display: block;
+	width:100%;
+	color:#fff;
+	font-size: 24px;
+}
 .draw-even{
 	top:100%;
 }
@@ -138,5 +145,31 @@ body{
 
 
 .main{
-	padding-top: 4px;
+	font-size: 16px;
+}
+.header{
+	height: 200px;
+	background: url(../images/header.jpeg) no-repeat;
+	background-size: 100% 100%;
+	color:#fff;
+	padding-top:20px;
+	font-family: Tahoma,'幼圆';
+
+	text-shadow:2px 2px 2px #000;
+	-webkit-text-shadow:2px 2px 2px #000;
+	-moz-text-shadow:2px 2px 2px #000;
+	-ms-text-shadow:2px 2px 2px #000;
+}
+.header .form-group span{
+	margin: 0 30px;
+
+}
+.header .form-group small{
+	color:#eee;
+}
+.header .form-group.last{
+	text-align: center;
+	color:#efe;
+	margin-top: 16px;
+	font-size: 14px;
 }

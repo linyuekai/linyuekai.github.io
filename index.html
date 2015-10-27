@@ -29,13 +29,13 @@
 <div class="draw draw-5"><p>到</p></div>
 <div class="draw draw-6"><p>我</p></div>
 <div class="draw draw-7"><p>的</p></div>
-<div class="draw draw-8"><p>主</p></div>
-<div class="draw draw-9"><p>页</p></div>
+<div class="draw draw-8"><p>主<span style="text-align:right;">点&nbsp;&nbsp;击&nbsp;</span></p></div>
+<div class="draw draw-9"><p>页<span style="text-align:left;">&nbsp;跳&nbsp;&nbsp;过</span></p></div>
 <div class="draw draw-10"></div>
 
 <script>
 	var img = new Image();
-	img.src="images/1.jpg";
+	img.src="images/welcome.jpg";
 	img.onload = function(){
 
 		$(".draw").css("background","url("+img.src+") no-repeat");
@@ -50,16 +50,43 @@
 				"background-position": (10*i+i)+"% 0",
 				"left": (10*i)+"%"
 			});
+		}).click(function(){
+			$(".draw").hide().remove();
 		});
-		setTimeout(function(){
-			$(".draw:even").addClass("draw-even");
-			$(".draw:odd").addClass("draw-odd");
-		},2000);
+		if($(".draw").length > 0){
+			setTimeout(function(){
+				$(".draw:even").addClass("draw-even");
+				$(".draw:odd").addClass("draw-odd");
+			},2000);
+		}
 	}
 </script>
 
 <div class="main">
-	精彩马上呈现。。。
+	<div class="header">
+		<div class="container">
+			<div class="form-group">
+				<span class="myname"><big>林粤凯</big></span>
+				<span class="mysex">男</span>
+				<span class="myage">21周岁</span>
+				<span class="school">就读于 <em>广东工业大学</em></span>
+			</div>
+
+			<div class="form-group">
+				<span class="myinterest">不喜欢高等数学，喜欢代码、科技、听歌、游戏，以及...美女<img src="images/tx.png" alt="偷笑"></span>
+			</div>
+
+			<div class="form-group">
+				<span class="myabilities">熟悉前端知识，时时关注前端资讯</span>
+			</div>
+			<div class="form-group">
+				<span class="">热爱青春，享受生活</span>
+			</div>
+			<div class="form-group last">
+				<span class="note">这里存放着一些本人自己写的网页常用组件，以及成品，持续更新中......</span>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
