@@ -4,10 +4,14 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 	<title>我的主页</title>
-	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script>
+		$(window).on("beforeunload",function(){
+			$(window).scrollTop(0);
+		});
+
 		if($(window).width() < 800){
 			location.href = "http://linyuekai.github.io/mobile/";
 		}
@@ -51,18 +55,24 @@
 				"left": (10*i)+"%"
 			});
 		}).click(function(){
-			$(".draw").hide().remove();
-			introductionAnimate();
+			afterWelcome();
 		});
 		if($(".draw").length > 0){
 			setTimeout(function(){
 				$(".draw:even").addClass("draw-even");
 				$(".draw:odd").addClass("draw-odd");
 				setTimeout(function(){
-					introductionAnimate();
+					afterWelcome();
 				},1000);
 			},2000);
 		}
+	}
+	function afterWelcome(){
+		$(".draw").hide().remove();
+		setTimeout(function(){
+			$("body").css("overflow","auto");
+		},1000);
+		introductionAnimate();
 	}
 
 	function introductionAnimate(){
@@ -94,6 +104,12 @@
 				<span class="note">这里存放着一些本人自己写的网页常用组件，以及成品，持续更新中......</span>
 			</div>
 		</div>
+	</div>
+
+	<div class="list">
+			<div class="last">
+				<span class="note">这里存放着一些本人自己写的网页常用组件，以及成品，持续更新中......</span>
+			</div>
 	</div>
 </div>
 </body>
