@@ -182,8 +182,6 @@ src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
 	margin: 0 30px;
 }
 
-
-
 .header .myname a{
 	font-family: 'yaya';
 	font-size: 20px;
@@ -201,7 +199,7 @@ src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
 	-ms-transition:color .2s;
 }
 .header .myname a:hover{
-	color:#83e;
+	color:#D9BAE4;
 	
 
 }
@@ -514,5 +512,20 @@ src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
 }
 
 .list{
-	height: 900px;
+
+}
+.list .row>h3{
+	text-align: center;
+}
+.list .row>h3:before{
+	content: " ";
+	display: block;
+
+}
+.list .row>h3:after{
+
+}
+.list .row>div[class^=col]{
+	height: 400px;
+	border: 1px solid #ccc;
 }
