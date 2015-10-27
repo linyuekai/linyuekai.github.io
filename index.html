@@ -52,37 +52,45 @@
 			});
 		}).click(function(){
 			$(".draw").hide().remove();
+			introductionAnimate();
 		});
 		if($(".draw").length > 0){
 			setTimeout(function(){
 				$(".draw:even").addClass("draw-even");
 				$(".draw:odd").addClass("draw-odd");
+				setTimeout(function(){
+					introductionAnimate();
+				},1000);
 			},2000);
 		}
+	}
+
+	function introductionAnimate(){
+		$(".header>.container>.form-group,.header>.container>.last").addClass("active");
 	}
 </script>
 
 <div class="main">
 	<div class="header">
 		<div class="container">
-			<div class="form-group">
+			<div class="form-group one">
 				<span class="myname"><big>林粤凯</big></span>
 				<span class="mysex">男</span>
 				<span class="myage">21周岁</span>
 				<span class="school">就读于 <em>广东工业大学</em></span>
 			</div>
 
-			<div class="form-group">
-				<span class="myinterest">不喜欢高等数学，喜欢代码、科技、听歌、游戏，以及...美女<img src="images/tx.png" alt="偷笑"></span>
+			<div class="form-group two">
+				<span class="myinterest">讨厌高等数学，喜欢代码、科技、听歌、游戏，以及...美女</span>
 			</div>
 
-			<div class="form-group">
+			<div class="form-group three">
 				<span class="myabilities">熟悉前端知识，时时关注前端资讯</span>
 			</div>
-			<div class="form-group">
+			<div class="form-group four">
 				<span class="">热爱青春，享受生活</span>
 			</div>
-			<div class="form-group last">
+			<div class="last">
 				<span class="note">这里存放着一些本人自己写的网页常用组件，以及成品，持续更新中......</span>
 			</div>
 		</div>

@@ -160,6 +160,9 @@ body{
 	-moz-text-shadow:2px 2px 2px #000;
 	-ms-text-shadow:2px 2px 2px #000;
 }
+.header .form-group{
+	margin-left: -9999px;
+}
 .header .form-group span{
 	margin: 0 30px;
 
@@ -167,9 +170,310 @@ body{
 .header .form-group small{
 	color:#eee;
 }
-.header .form-group.last{
+.header .last{
 	text-align: center;
 	color:#efe;
-	margin-top: 16px;
+	margin-top: 9999px;
 	font-size: 14px;
+
+	
+	transition:all 1.5s;
+	-webkit-transition:all 1.5s;
+	-moz-transition:all 1.5s;
+	-ms-transition:all 1.5s;
+}
+.header .form-group.one.active{
+	animation:movein-one 1.5s;
+	-moz-animation:movein-one 1.5s;
+	-webkit-ninmation:movein-one 1.5s;
+	-o-animation:movein-one 1.5s;
+	
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+.header .form-group.two.active{
+	animation:movein-two 1.5s;
+	-moz-animation:movein-two 1.5s;
+	-webkit-ninmation:movein-two 1.5s;
+	-o-animation:movein-two 1.5s;
+	
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+.header .form-group.three.active{
+	animation:movein-three 1.5s;
+	-moz-animation:movein-three 1.5s;
+	-webkit-ninmation:movein-three 1.5s;
+	-o-animation:movein-three 1.5s;
+	
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+.header .form-group.four.active{
+	animation:movein-four 1.5s;
+	-moz-animation:movein-four 1.5s;
+	-webkit-ninmation:movein-four 1.5s;
+	-o-animation:movein-four 1.5s;
+	
+	animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+}
+.header .last.active{
+	margin-top: 16px;
+}
+@keyframes movein-one{
+	0%{
+		margin-left: -9999px;
+	}
+	15%{
+		margin-left: 80px;
+	}
+	25%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-webkit-keyframes movein-one{
+	0%{
+		margin-left: -9999px;
+	}
+	15%{
+		margin-left: 80px;
+	}
+	25%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-moz-keyframes movein-one{
+	0%{
+		margin-left: -9999px;
+	}
+	15%{
+		margin-left: 80px;
+	}
+	25%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-o-keyframes movein-one{
+	0%{
+		margin-left: -9999px;
+	}
+	15%{
+		margin-left: 80px;
+	}
+	25%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@keyframes movein-two{
+	0%{
+		margin-left: -9999px;
+	}
+	25%{
+		margin-left: -9999px;
+	}
+	40%{
+		margin-left: 80px;
+	}
+	50%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-webkit-keyframes movein-two{
+	0%{
+		margin-left: -9999px;
+	}
+	25%{
+		margin-left: -9999px;
+	}
+	40%{
+		margin-left: 80px;
+	}
+	50%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-moz-keyframes movein-two{
+	0%{
+		margin-left: -9999px;
+	}
+	25%{
+		margin-left: -9999px;
+	}
+	40%{
+		margin-left: 80px;
+	}
+	50%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-o-keyframes movein-two{
+	0%{
+		margin-left: -9999px;
+	}
+	25%{
+		margin-left: -9999px;
+	}
+	40%{
+		margin-left: 80px;
+	}
+	50%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@keyframes movein-three{
+	0%{
+		margin-left: -9999px;
+	}
+	50%{
+		margin-left: -9999px;
+	}
+	65%{
+		margin-left: 80px;
+	}
+	75%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-webkit-keyframes movein-three{
+	0%{
+		margin-left: -9999px;
+	}
+	50%{
+		margin-left: -9999px;
+	}
+	65%{
+		margin-left: 80px;
+	}
+	75%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-moz-keyframes movein-three{
+	0%{
+		margin-left: -9999px;
+	}
+	50%{
+		margin-left: -9999px;
+	}
+	65%{
+		margin-left: 80px;
+	}
+	75%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-o-keyframes movein-three{
+	0%{
+		margin-left: -9999px;
+	}
+	50%{
+		margin-left: -9999px;
+	}
+	65%{
+		margin-left: 80px;
+	}
+	75%{
+		margin-left: 0px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@keyframes movein-four{
+	0%{
+		margin-left: -9999px;
+	}
+	75%{
+		margin-left: -9999px;
+	}
+	90%{
+		margin-left: 80px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-webkit-keyframes movein-four{
+	0%{
+		margin-left: -9999px;
+	}
+	75%{
+		margin-left: -9999px;
+	}
+	90%{
+		margin-left: 80px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-moz-keyframes movein-four{
+	0%{
+		margin-left: -9999px;
+	}
+	75%{
+		margin-left: -9999px;
+	}
+	90%{
+		margin-left: 80px;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+@-o-keyframes movein-four{
+	0%{
+		margin-left: -9999px;
+	}
+	75%{
+		margin-left: -9999px;
+	}
+	90%{
+		margin-left: 80px;
+	}
+	100%{
+		margin-left: 0px;
+	}
 }
