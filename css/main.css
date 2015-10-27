@@ -55,6 +55,10 @@ body{
 	-o-animation:progress .7s infinite;
 	
 }
+#loading>div p.needknow{
+	font-size: 18px;
+	color:#ccc;
+}
 @keyframes progress{
 	from{
 		width:0px;
