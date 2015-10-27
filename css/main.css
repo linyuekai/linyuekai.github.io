@@ -56,7 +56,7 @@ body{
 	
 }
 #loading>div p.needknow{
-	font-size: 18px;
+	font-size: 16px;
 	color:#ccc;
 }
 @keyframes progress{
@@ -99,6 +99,17 @@ body{
 	left:0;
 }
 
+@font-face {
+font-family: 'yaya';
+src: url('font/minijianyaya.eot');
+src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
+     url('font/minijianyaya.woff') format('woff'),
+     url('font/minijianyaya.ttf') format('truetype'),
+     url('font/minijianyaya.svg#minijianyaya') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .draw{
 	width:10%;
 	height: 100%;
@@ -121,7 +132,7 @@ body{
 	line-height: 76px;
 	color:#F6F72F;
 
-	font-family: '幼圆';
+	font-family: 'yaya';
 	font-size: 76px;
 	position: absolute;
 	top:50%;
@@ -169,10 +180,30 @@ body{
 }
 .header .form-group span{
 	margin: 0 30px;
-
 }
-.header .form-group small{
-	color:#eee;
+
+
+
+.header .myname a{
+	font-family: 'yaya';
+	font-size: 20px;
+	color:#F5F6F7;
+	text-decoration: underline;
+
+	text-shadow:2px 2px 2px blue;
+	-webkit-text-shadow:2px 2px 2px blue;
+	-moz-text-shadow:2px 2px 2px blue;
+	-ms-text-shadow:2px 2px 2px blue;
+
+	transition:color .2s;
+	-webkit-transition:color .2s;
+	-moz-transition:color .2s;
+	-ms-transition:color .2s;
+}
+.header .myname a:hover{
+	color:#83e;
+	
+
 }
 .header .last{
 	text-align: center;
