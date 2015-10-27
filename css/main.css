@@ -516,16 +516,44 @@ src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
 }
 .list .row>h3{
 	text-align: center;
+	font-family: "微软雅黑";
+	color:#666;
+}
+.list .row>h3 span{
+	background:#fff;
+	padding: 0 30px;
 }
 .list .row>h3:before{
 	content: " ";
 	display: block;
-
+	height: 0px;
+	width:100%;
+	position: relative;
+	top:14px;
+	z-index: -9;
+	border-bottom:1px solid #ccc; 
 }
-.list .row>h3:after{
-
-}
-.list .row>div[class^=col]{
+.list .widgets .row>div[class^=col]{
 	height: 400px;
+}
+.list .items{
+	padding:10px;
+	height: 380px;
 	border: 1px solid #ccc;
+}
+.list .items:hover{
+	background:#eee;
+}
+
+.list .pages .row>div[class^=col]{
+	height: 400px;
+}
+
+
+.footer{
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	margin-top: 40px;
+	color:#999;
 }
