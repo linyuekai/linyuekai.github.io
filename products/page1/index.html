@@ -303,9 +303,9 @@
 
 		(function(){
 
-		   var colors = ['#6A83B5','#ccc'];
-		   var categories = ['已完成', '未完成'];
-		   var data = [{
+		   var colors = ['#6A83B5','#ccc'],
+		   	   categories = ['已完成', '未完成'],
+		   	   data = [{
 		            y: 58,
 		            color: colors[0],
 		            drilldown: {
@@ -324,12 +324,12 @@
 		                color: colors[1]
 		            }
 		        }];
-		   var browserData = [];
-		   var processData = [];
-		   var i, j;
-		   var dataLen = data.length;
-		   var drillDataLen;
-		   var brightness;
+		   var browserData = [],
+		   	   processData = [],
+		       i, j,
+		       dataLen = data.length,
+		       drillDataLen,
+		       brightness;
 
 
 		   // Build the data arrays
