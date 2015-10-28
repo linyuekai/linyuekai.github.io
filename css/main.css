@@ -539,7 +539,17 @@ src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
 .list .items{
 	padding:10px;
 	height: 380px;
-	border: 1px solid #ccc;
+}
+.list .items img{
+	border: 1px solid #ddd;
+	width:100%;
+	height: 305px;
+}
+.list .items p{
+	text-align: center;
+	margin-top:30px; 
+	font-size: 24px;
+
 }
 .list .items:hover{
 	background:#eee;
@@ -554,6 +564,6 @@ src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
 	text-align: center;
 	height: 50px;
 	line-height: 50px;
-	margin-top: 40px;
+	margin-top: 70px;
 	color:#999;
 }

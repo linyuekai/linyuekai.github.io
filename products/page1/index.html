@@ -1,0 +1,923 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="renderer" content="webkit">
+	<title>部门门户</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!--[if lt IE 9]>
+		<script src="js/html5shiv.min.js"></script>
+		 <script src="js/respond.min.js"></script>
+	<![endif]-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script src="js/myfocus.js"></script>
+	<script src="js/Highcharts-4.1.7.js"></script>
+</head>
+<body>
+<!--header begin-->
+	<header id="header">
+		<div class="container">
+			<div class="header-logo">
+				<a href="#" title="HONDA">
+					<img src="img/logo.png" alt="HONDA LOGO">
+				</a>
+			</div>
+			<div class="header-content">
+				<div class="logout text-center">
+					<a href="#">安全退出</a>
+				</div>
+
+				<div class="icons">
+					<div class="icons-left">
+						<div class="icons-message">
+							<a href="#"></a>
+							<span class="tips">6</span>
+						</div>
+					</div>
+
+					<div class="icons-right">
+						<div class="icons-setting">
+							<a href="#"></a>
+						</div>
+						<div class="icons-menu">
+							<a href="#"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="person">
+					<span>欢迎你，</span>
+					<a href="#">NOReason</a>
+				</div>
+			</div>
+		</div>
+	</header>
+<!--header end-->
+<!--快捷入口 begin-->
+	<div id="shortcut">
+		<span class="bdarrow"></span>
+		<div class="person"></div>
+		<div class="setting"></div>
+	</div>
+<!--快捷入口 end-->
+<!--导航nav begin-->
+	<nav id="nav">
+		<div class="container">
+			<div class="systems">
+				<div class="on" id="technology">
+					<div class="ch-tit">技术部门户</div>
+					<div class="en-subtit">TECHNOLOGY</div>
+				</div>
+				<div id="coating">
+					<div class="ch-tit">涂装树脂部</div>
+					<div class="en-subtit">COATING RESIN</div>
+				</div>
+				<div id="user-management">
+					<div class="ch-tit">版主管理</div>
+					<div class="en-subtit">USER MANAGEMENT</div>
+				</div>
+				<div id="sys-management">
+					<div class="ch-tit">系统管理员管理</div>
+					<div class="en-subtit">SYSTEM MANAGEMENT</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="navigation">
+			<div class="container">
+				<ul class="nav-list">
+					<li id="home"><a href="#">门户首页</a></li>
+					<li id="daily-manage"><a href="#">日常管理</a></li>
+					<li id="process"><a href="#">流程通道</a></li>
+					<li id="task-plan"><a href="#">任务计划</a></li>
+					<li id="business"><a href="#">行政办公</a></li>
+					<li id="books" class="last-li"><a href="#">知识库</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+<!--导航nav end-->
+<!--主体content begin-->
+	<div id="content">
+		<div class="container">
+				<div class="content-m">
+					<div class="btns container-fluid">
+						<div class="row">
+							<div class="col-xs-2 btn1"><a href="#"></a></div>
+							<div class="col-xs-2 btn2"><a href="#"></a></div>
+							<div class="col-xs-2 btn3"><a href="#"></a></div>
+							<div class="col-xs-2 btn4"><a href="#"></a></div>
+							<div class="col-xs-2 btn5"><a href="#"></a></div>
+							<div class="col-xs-2 btn6"><a href="#"></a></div>
+						</div>
+					</div>
+					
+					<div class="notice-and-news">
+						<div class="title">
+							<h2>通告公告&企业新闻</h2>
+							<span></span>
+						</div>
+
+						<div class="data">
+							<div class="headlines">
+								<h3>
+									<a href="#">
+										8.28万元起，全新锋范（CITY）“云端”预售发布
+									</a>
+									<span class="time">2015-08-14</span>
+								</h3>
+								<p><a href="#">7月28日，倍受瞩目的全新锋范（CITY）“云端”预售发布会在线开启，由此，全新锋范（CITY）开始在广汽本田全国特约销售服务店、广汽本田天猫旗舰店（http://ghac.tmall.com）同步接受预订，预售价8.28... </a><a href="#">[全文]</a></p>
+							</div>
+
+							<div class="news">
+								<ul>
+									<li>
+										<a class="type" href="#">[新闻]</a>
+										<a class="generalization" href="#">绿色未来，有我童行绿色未来，有我童行绿色未来，有我童行绿色未来，有我童行绿色未来，有我童行绿色未来，有我童行</a>
+										<span class="time">2015-08-14</span>
+									</li>
+									<li>
+										<a class="type" href="#">[新闻]</a>
+										<a class="generalization" href="#">智酷领航，2016款奥德赛魅力升级</a>
+										<span class="time">2015-08-14</span>
+									</li>
+									<li>
+										<a class="type" href="#">[新闻]</a>
+										<a class="generalization" href="#">“中考”优异，广汽本田上半年销量劲增34.7%</a>
+										<span class="time">2015-08-14</span>
+									</li>
+									<li>
+										<a class="type" href="#">[新闻]</a>
+										<a class="generalization" href="#">凌派推超配限量版，抢滩登陆5月车市黄金</a>
+										<span class="time">2015-08-14</span>	
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="personnel-development">
+						<div class="title">
+							<h2>人事部门</h2>
+							<span></span>
+						</div>
+
+						<div class="data">
+							<div class="headlines">
+								<h3>
+									<a href="#">
+										广汽本田总经理换人 本田中国岗位大调整
+									</a>
+									<span class="time">2015-08-14</span>
+								</h3>
+								<p><a href="#">日前，本田日本官方网站公布了将于4月1日开始实行的新一轮人事调整。根据公告，现任东风本田总经理水野泰秀（点击查看最新人物消息） 将调任广汽本田担任总经理，而现任广本的总经理神子柴寿召将调任欧洲。目前为止</a><a href="#">[全文]</a></p>
+							</div>
+
+							<div class="news">
+								<ul>
+									<li>
+										<a class="type" href="#">[新闻]</a>
+										<a class="generalization" href="#">广汽集团人事调整:广本张志勇接替陈淼</a>
+										<span class="time">2015-08-14</span>
+									</li>
+									<li>
+										<a class="type" href="#">[新闻]</a>
+										<a class="generalization" href="#">广汽四大业务人事变动 重点支援广汽本田</a>
+										<span class="time">2015-08-14</span>
+									</li>
+									<li>
+										<a class="type" href="#">[新闻]</a>
+										<a class="generalization" href="#">广汽本田宣布高层人事调整</a>
+										<span class="time">2015-08-14</span>
+									</li>
+									<li>
+										<a class="type" href="#">[新闻]</a>
+										<a class="generalization" href="#">广汽集团人事变动继续发酵</a>
+										<span class="time">2015-08-14</span>	
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="charts">
+						<div class="to-do">
+							<div class="title">
+								<h2>待办项目</h2>
+								<span></span>
+							</div>
+
+							<div class="data">
+								<div class="charts-head">
+									<div>
+										<div class="day on">按日</div>
+										<div class="week">按周</div>
+										<div class="month">按月</div>
+									</div>
+								</div>
+								<div style="height:229px">
+								    <div class="wrap" style="width:100%;height:100%;">
+								          	<div id="container-to-do" style="width: 100%; height: 100%; ">
+								          	</div>
+								    </div>									
+								</div>
+							</div>
+						</div>
+
+						<div class="process-statistics">
+							<div class="title">
+								<h2>流程统计</h2>
+								<span></span>
+							</div>
+							
+							<div class="data">
+								<div class="charts-head">
+									<div>
+										<div class="month-statistics on">
+											月度统计
+										</div>
+
+										<div class="season-statistics">
+											季度统计
+										</div>
+									</div>
+								</div>
+								<div style="height:229px">
+								    <div class="wrap" style="width:100%;height:100%;">
+								          	<div id="container-process-statistics" style="width: 100%; height: 100%; ">
+								          	</div>
+								          	<div class="instructions">
+								          		<h2>58%</h2>完成率
+								          	</div>
+								    </div>
+								</div>
+							</div>
+						</div>
+<script>
+	$(document).ready(function() {  
+		(function(){
+		 	$('#container-to-do').highcharts({                                           
+		        chart: {                                                           
+		            type: 'bar'                                                    
+		        },                                                                 
+		        title: {                                                           
+		            text: ''                    
+		        },                                                                                                                    
+		        xAxis: {                                                           
+		            categories: ['项目1','项目2','项目3','项目4'],
+		            title: {                                                       
+		                text: null                                                 
+		            }                                                              
+		        },                                                                 
+		        yAxis: {                                                           
+		            min: 0,                                                        
+		            title: {                                                       
+		                text: '',                             
+		                align: 'high'                                              
+		            },                                                             
+		            labels: {                                                      
+		                overflow: 'justify'                                        
+		            }                                                              
+		        },                                                   
+		        plotOptions: {                                                     
+		            bar: {                                                         
+		                dataLabels: {                                              
+		                    enabled: true                                          
+		                },
+		                showInLegend:false                                                         
+		            }                                                              
+		        },                                                                 
+		                                                               
+		        credits: {                                                         
+		            enabled: false                                                 
+		        },                                                                 
+		        series: [{                                                         
+		            name: '完成度',                                             
+		            data: [75, 50, 85, 20]                                   
+		        }]                                                                 
+		    });       
+		})();
+
+		(function(){
+
+		   var colors = ['#6A83B5','#ccc'];
+		   var categories = ['已完成', '未完成'];
+		   var data = [{
+		            y: 58,
+		            color: colors[0],
+		            drilldown: {
+		                name: '已完成',
+		                categories: ['已完成'],
+		                data: [58],
+		                color: colors[0]
+		            }
+		        }, {
+		            y: 42,
+		            color: colors[1],
+		            drilldown: {
+		                name: '未完成',
+		                categories: ['未完成'],
+		                data: [42],
+		                color: colors[1]
+		            }
+		        }];
+		   var browserData = [];
+		   var processData = [];
+		   var i, j;
+		   var dataLen = data.length;
+		   var drillDataLen;
+		   var brightness;
+
+
+		   // Build the data arrays
+		   for (i = 0; i < dataLen; i += 1) {
+		      // add browser data
+		      browserData.push({
+		         name: categories[i],
+		         y: data[i].y,
+		         color: "#fff"
+		      });
+
+		      // add version data
+		      drillDataLen = data[i].drilldown.data.length;
+		      for (j = 0; j < drillDataLen; j += 1) {
+		         brightness = 0.2 - (j / drillDataLen) / 5;
+		         processData.push({
+		            name: data[i].drilldown.categories[j],
+		            y: data[i].drilldown.data[j],
+		            color: Highcharts.Color(data[i].color).brighten(brightness).get()
+		         });
+		      }
+		   }
+
+		   var chart = {
+		      type: 'pie'
+		   };
+		   var title = {
+		      text: ''
+		   };      
+		   var yAxis = {
+		      title: {
+		         text: 'Total percent market share'
+		      }
+		   };
+		   var tooltip = {
+		      valueSuffix: '%',
+		      enabled:false
+		   };
+		   var plotOptions = {
+		      pie: {
+		         shadow: false,
+		         center: ['50%', '50%'],
+		        dataLabels: {
+		    	 	enabled: false
+			    }
+		      }
+		   };
+		   var credits = {
+		       href: '',
+		       text: ''
+		   };
+		   var series= [{
+		            name: 'Process',
+		            data: processData,
+		            size: '90%',
+		            innerSize: '75%',
+		            dataLabels: {
+		                formatter: function () {
+		                    // display only if larger than 1
+		                    return this.y > 1 ? '' + this.point.name + ': ' + this.y + '%'  : null;
+		                }
+		            }
+		        }   
+		   ];     
+		      
+		   var json = {};   
+		   json.chart = chart; 
+		   json.title = title;  
+		   json.yAxis = yAxis;
+		   json.credits = credits;
+		   json.tooltip = tooltip;  
+		   json.series = series;
+		   json.plotOptions = plotOptions;
+		   $('#container-process-statistics').highcharts(json);  
+
+		})();
+	});
+</script>
+					</div>
+				</div>
+
+				<div class="content-l">
+					<div class="pic-focus">
+						<div class="focus-window">
+								<div id="focus" class="focus">
+									<ul>
+										<li><a href="javascript:;">
+											<img src="img/focus_pic1.jpg" alt="pic1">
+										</a></li>
+										<li><a href="javascript:;">
+											<img src="img/focus_pic1.jpg" alt="pic1">
+										</a></li>
+										<li><a href="javascript:;">
+											<img src="img/focus_pic1.jpg" alt="pic1">
+										</a></li>
+										<li><a href="javascript:;">
+											<img src="img/focus_pic1.jpg" alt="pic1">
+										</a></li>
+										<li><a href="javascript:;">
+											<img src="img/focus_pic1.jpg" alt="pic1">
+										</a></li>
+										<li><a href="javascript:;">
+											<img src="img/focus_pic1.jpg" alt="pic1">
+										</a></li>
+									</ul>
+								</div>
+						</div>
+					</div>
+<!--焦点轮播图 begin-->
+<script>
+	$('#focus').slideFocus();
+</script>
+<!--焦点轮播图 end-->
+					<div class="tab-news">
+						<div class="tab-head">
+							<ul>
+								<li id="hot">最热门</li>
+								<li id="project">专题策划</li>
+								<li class="on" id="newscenter">新闻中心</li>
+							</ul>
+						</div>
+						<div class="tab-body">
+							<div class="tab-1">
+
+
+								<div>
+									<ul>
+										<li>
+											<a class="important" href="#" title="“处女女王”守身秘密">“处女女王”守身秘密</a>
+											<a class="important" href="#" title="骆驼：沙漠中的F1">骆驼：沙漠中的F1</a>
+										</li>
+										<li>
+											<a href="#" title="相隔地球两端的姐妹花">相隔地球两端的姐妹花</a>
+											<a href="#" title="曝锻炼背后的真相">曝锻炼背后的真相</a>
+										</li>
+										<li>
+											<a class="important" href="#" title="演讲">演讲</a>
+											<span class="line"></span>
+											<a href="#" title="毒品交易里的经济学">毒品交易里的经济学</a>
+										</li>
+										<li>
+											<a href="#" title="为灾民建造纸质的避难所">为灾民建造纸质的避难所</a>
+											<a href="#" title="5种倾听的方法">5种倾听的方法</a>
+										</li>
+									</ul>
+								</div>
+
+								<div>
+									<ul>
+										<li>
+											<a class="important" href="#" title="“处女女王”守身秘密">“处女女王”守身秘密</a>
+											<a class="important" href="#" title="骆驼：沙漠中的F1">骆驼：沙漠中的F1</a>
+										</li>
+										<li>
+											<a href="#" title="相隔地球两端的姐妹花">相隔地球两端的姐妹花</a>
+											<a href="#" title="曝锻炼背后的真相">曝锻炼背后的真相</a>
+										</li>
+									</ul>
+								</div>	
+
+								<div>
+									<ul>
+										<li>
+											<a class="important" href="#" title="Ted全网首播">Ted全网首播</a>
+											<span class="line"></span>
+											<a class="important" href="#" title="比尔盖茨谈新疫情爆发">比尔盖茨谈新疫情爆发</a>
+
+										</li>
+										<li>
+											<a href="#" title="国际公开课">国际公开课</a>
+											<span class="line"></span>
+											<a href="#" title="达芬奇真迹《美丽公主》">达芬奇真迹《美丽公主》</a>
+										</li>
+										<li>
+											<a href="#" title="你应知道鸡的牙齿">你应知道鸡的牙齿</a>
+											<a href="#" title="公元400年前的裸体艺术">公元400年前的裸体艺术</a>
+										</li>
+										<li>
+											<a class="important" href="#" title="演讲">演讲</a>
+											<span class="line"></span>
+											<a href="#" title="毒品交易里的经济学">毒品交易里的经济学</a>
+										</li>
+										<li>
+											<a href="#" title="为灾民建造纸质的避难所">为灾民建造纸质的避难所</a>
+											<a href="#" title="5种倾听的方法">5种倾听的方法</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="tab-2">
+								<div>
+									<ul>
+										<li>
+											<a class="important" href="#" title="“处女女王”守身秘密">“处女女王”守身秘密</a>
+											<a class="important" href="#" title="骆驼：沙漠中的F1">骆驼：沙漠中的F1</a>
+										</li>
+										<li>
+											<a href="#" title="相隔地球两端的姐妹花">相隔地球两端的姐妹花</a>
+											<a href="#" title="曝锻炼背后的真相">曝锻炼背后的真相</a>
+										</li>
+									</ul>
+								</div>	
+
+								<div>
+									<ul>
+										<li>
+											<a class="important" href="#" title="Ted全网首播">Ted全网首播</a>
+											<span class="line"></span>
+											<a class="important" href="#" title="比尔盖茨谈新疫情爆发">比尔盖茨谈新疫情爆发</a>
+
+										</li>
+										<li>
+											<a href="#" title="国际公开课">国际公开课</a>
+											<span class="line"></span>
+											<a href="#" title="达芬奇真迹《美丽公主》">达芬奇真迹《美丽公主》</a>
+										</li>
+										<li>
+											<a href="#" title="你应知道鸡的牙齿">你应知道鸡的牙齿</a>
+											<a href="#" title="公元400年前的裸体艺术">公元400年前的裸体艺术</a>
+										</li>
+										<li>
+											<a class="important" href="#" title="演讲">演讲</a>
+											<span class="line"></span>
+											<a href="#" title="毒品交易里的经济学">毒品交易里的经济学</a>
+										</li>
+										<li>
+											<a href="#" title="为灾民建造纸质的避难所">为灾民建造纸质的避难所</a>
+											<a href="#" title="5种倾听的方法">5种倾听的方法</a>
+										</li>
+									</ul>
+								</div>
+
+								<div>
+									<ul>
+										<li>
+											<a class="important" href="#" title="“处女女王”守身秘密">“处女女王”守身秘密</a>
+											<a class="important" href="#" title="骆驼：沙漠中的F1">骆驼：沙漠中的F1</a>
+										</li>
+										<li>
+											<a href="#" title="相隔地球两端的姐妹花">相隔地球两端的姐妹花</a>
+											<a href="#" title="曝锻炼背后的真相">曝锻炼背后的真相</a>
+										</li>
+										<li>
+											<a class="important" href="#" title="演讲">演讲</a>
+											<span class="line"></span>
+											<a href="#" title="毒品交易里的经济学">毒品交易里的经济学</a>
+										</li>
+										<li>
+											<a href="#" title="为灾民建造纸质的避难所">为灾民建造纸质的避难所</a>
+											<a href="#" title="5种倾听的方法">5种倾听的方法</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div class="tab-3 active">
+								<div>
+									<ul>
+										<li>
+											<a class="important" href="#" title="Ted全网首播">Ted全网首播</a>
+											<span class="line"></span>
+											<a class="important" href="#" title="比尔盖茨谈新疫情爆发">比尔盖茨谈新疫情爆发</a>
+
+										</li>
+										<li>
+											<a href="#" title="国际公开课">国际公开课</a>
+											<span class="line"></span>
+											<a href="#" title="达芬奇真迹《美丽公主》">达芬奇真迹《美丽公主》</a>
+										</li>
+										<li>
+											<a href="#" title="你应知道鸡的牙齿">你应知道鸡的牙齿</a>
+											<a href="#" title="公元400年前的裸体艺术">公元400年前的裸体艺术</a>
+										</li>
+										<li>
+											<a class="important" href="#" title="演讲">演讲</a>
+											<span class="line"></span>
+											<a href="#" title="毒品交易里的经济学">毒品交易里的经济学</a>
+										</li>
+										<li>
+											<a href="#" title="为灾民建造纸质的避难所">为灾民建造纸质的避难所</a>
+											<a href="#" title="5种倾听的方法">5种倾听的方法</a>
+										</li>
+									</ul>
+								</div>
+
+								<div>
+									<ul>
+										<li>
+											<a class="important" href="#" title="“处女女王”守身秘密">“处女女王”守身秘密</a>
+											<a class="important" href="#" title="骆驼：沙漠中的F1">骆驼：沙漠中的F1</a>
+										</li>
+										<li>
+											<a href="#" title="相隔地球两端的姐妹花">相隔地球两端的姐妹花</a>
+											<a href="#" title="曝锻炼背后的真相">曝锻炼背后的真相</a>
+										</li>
+										<li>
+											<a class="important" href="#" title="演讲">演讲</a>
+											<span class="line"></span>
+											<a href="#" title="毒品交易里的经济学">毒品交易里的经济学</a>
+										</li>
+										<li>
+											<a href="#" title="为灾民建造纸质的避难所">为灾民建造纸质的避难所</a>
+											<a href="#" title="5种倾听的方法">5种倾听的方法</a>
+										</li>
+									</ul>
+								</div>
+
+								<div>
+									<ul>
+										<li>
+											<a class="important" href="#" title="“处女女王”守身秘密">“处女女王”守身秘密</a>
+											<a class="important" href="#" title="骆驼：沙漠中的F1">骆驼：沙漠中的F1</a>
+										</li>
+										<li>
+											<a href="#" title="相隔地球两端的姐妹花">相隔地球两端的姐妹花</a>
+											<a href="#" title="曝锻炼背后的真相">曝锻炼背后的真相</a>
+										</li>
+									</ul>
+								</div>								
+							</div>
+						</div>
+					</div>
+<!--Tab begin-->
+<script>
+	$(".tab-head").on("mouseover",function(e){
+		$(".tab-head>ul>li").removeClass("on");
+		e.target.className = "on";
+
+		var tabBodydivs = $(".tab-body>div"),
+			timeworker;
+		function tab(num){
+			clearTimeout(timeworker);
+			timeworker = setTimeout(function(){
+				tabBodydivs.removeClass("active");
+				$(".tab-body>div.tab-"+num).addClass("active");
+			},200);
+		}
+		switch(e.target.id){
+			case "hot" : 
+						tab(1);
+						break;
+			case "project" : 
+						tab(2);
+						break;
+			case "newscenter" : 
+						tab(3);
+						break;
+		}
+	});
+</script>
+<!--Tab end-->
+					<div class="department-plan">
+							<div class="title">
+								<h2>部门日程</h2>
+								<span></span>
+							</div>
+							<div class="data">
+								<table>
+									<tr class="first-row">
+										<td class="name" style="width:43.3333%;">数据存量</td>
+										<td class="value" width="43.3333%">1,678</td>
+										<td width="13.3333%"><span></span></td>
+									</tr>
+									<tr>
+										<td class="name gray">数据存量</td>
+										<td class="value">1,678</td>
+										<td><span></span></td>
+									</tr>
+									<tr>
+										<td class="name gray">数据存量</td>
+										<td class="value">1,678</td>
+										<td><span></span></td>
+									</tr>
+									<tr>
+										<td class="name gray">数据存量</td>
+										<td class="value">1,678</td>
+										<td><span></span></td>
+									</tr>
+									<tr>
+										<td class="name">数据存量</td>
+										<td class="value">1,678</td>
+										<td><span></span></td>
+									</tr>
+									<tr>
+										<td class="name">数据存量</td>
+										<td class="value">1,678</td>
+										<td><span></span></td>
+									</tr>										
+								</table>
+							</div>
+					</div>
+				</div>
+
+				<div class="content-r">
+					<div class="mailbox">
+						<div class="text">
+							<h3><a href="#">总经理信箱</a></h3>
+							<p class="sub-tit">GENERAL MANAGER MAILBOX</p>
+						</div>
+					</div>
+
+					<div class="mail-list">
+						<div class="title">
+							<h2>通讯录</h2>
+							<span></span>
+						</div>
+
+						<div class="data">
+							<div class="check-boxes control-group">
+								<div>								
+									<input id="name" type="radio" name="search-by">
+									<label for="name">姓名</label>
+								</div>
+								<div>
+									<input id="mail" type="radio" name="search-by">
+									<label for="mail">邮箱</label>			
+								</div>
+								<div>
+									<input id="depart" type="radio" name="search-by">
+									<label for="depart">部门</label>	
+								</div>
+							</div>
+
+							<div class="search control-group">
+								<input class="form-control" type="text" maxlength="20">
+								<div id="search-btn"></div>
+							</div>
+						</div>
+					</div>
+
+					<div class="weather">
+						<div class="city">
+							<div class="city-select">
+								<div class="city-cur">
+									<span class="pro-now"><a href="#">广东</a></span>
+									<span class="city-now"><a href="#">广州</a></span>
+								</div>
+
+								<div class="cities">
+									<a href="#">其他城市</a>
+								</div>
+							</div>
+
+							<div class="weather-details">
+									<a href="#">29&#176;</a>
+							</div>
+						</div>
+
+						<div class="weather-several-days"> 
+							<div class="tomorrow">
+								<a href="#">MON</a>
+							</div>
+							<div class="after-tomorrow">
+								<a href="#">TUE</a>
+							</div>
+							<div class="big-after-tomorrow">
+								<a href="#">WED</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="date">
+						<div class="title">
+							<h2>广汽日历</h2>
+							<span></span>
+						</div>
+
+						<div class="data">
+							<div class="select-date">
+								<div>
+									<span class="year">2015年</span>
+									<span class="month">8月</span>
+								</div>
+							</div>
+							<div class="calendar">
+								<table>
+									<thead>
+										<tr>
+											<th>一</th>
+											<th>二</th>
+											<th>三</th>
+											<th>四</th>
+											<th>五</th>
+											<th>六</th>
+											<th class="last-col">七</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td>2</td>
+											<td>3</td>
+											<td>4</td>
+											<td>5</td>
+											<td>6</td>
+											<td class="last-col">7</td>
+										</tr>
+										<tr>
+											<td>8</td>
+											<td>9</td>
+											<td>10</td>
+											<td>11</td>
+											<td>12</td>
+											<td>13</td>
+											<td class="last-col">14</td>
+										</tr>
+										<tr>
+											<td>15</td>
+											<td>16</td>
+											<td>17</td>
+											<td>18</td>
+											<td>19</td>
+											<td>20</td>
+											<td class="last-col">21</td>
+										</tr>
+										<tr>
+											<td>22</td>
+											<td>23</td>
+											<td>24</td>
+											<td>25</td>
+											<td>26</td>
+											<td>27</td>
+											<td class="last-col">28</td>
+										</tr>
+										<tr>
+											<td>29</td>
+											<td>30</td>
+											<td class="disabled">1</td>
+											<td class="disabled">2</td>
+											<td class="disabled">3</td>
+											<td class="disabled">4</td>
+											<td class="disabled last-col">5</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+
+					<div class="survey">
+						<div class="title">
+							<h2>问卷调查</h2>
+							<span></span>
+						</div>
+
+						<div class="data">
+							<div class="survey-question control-group">
+								<h3>你对广汽的评价？</h3>
+								<div>
+									<input id="very" type="radio" name="satisfaction">
+									<label for="very">非常满意</label>
+								</div>
+								<div>
+									<input id="ok" type="radio" name="satisfaction">
+									<label for="ok">整体满意</label>			
+								</div>
+								<div>
+									<input id="soso" type="radio" name="satisfaction">
+									<label for="soso">一 般</label>									
+								</div>
+							</div>
+
+							<div class="survey-btns">
+								<div>
+									<div class="prev">上一项</div>
+									<div class="next">下一项</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
+<!--主体content end-->
+<!--footer begin-->
+	<div id="footer">
+		<div class="container">
+			<p><span>Copyright© 2015 ALL Rights Reserved</span> 广汽本田汽车有限公司 版权所有 </p>
+		</div>
+	</div>
+<!--footer end-->
+<script>
+	 $(".headlines p a").each(function(){ 
+	 	var maxwidth=95; 
+	 	if($(this).text().length>maxwidth){ 
+	 		$(this).text($(this).text().substring(0,maxwidth)); 
+	 		$(this).html($(this).html()+'...'); 
+	 	} 
+	 }); 
+</script>
+</body>
+</html>
