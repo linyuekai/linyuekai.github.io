@@ -166,6 +166,7 @@ src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
 	height: 200px;
 	background: url(../images/header.jpeg) no-repeat;
 	background-size: 100% 100%;
+	position: relative;
 	color:#fff;
 	padding-top:20px;
 	font-family: Tahoma,'幼圆';
@@ -174,6 +175,11 @@ src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
 	-webkit-text-shadow:2px 2px 2px #000;
 	-moz-text-shadow:2px 2px 2px #000;
 	-ms-text-shadow:2px 2px 2px #000;
+}
+.header #pet{
+	position: absolute;
+	top:5px;
+	right:0;
 }
 .header .form-group{
 	margin-left: -9999px;
@@ -200,8 +206,6 @@ src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
 }
 .header .myname a:hover{
 	color:#D9BAE4;
-	
-
 }
 .header .last{
 	text-align: center;
