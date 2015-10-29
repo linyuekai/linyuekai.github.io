@@ -178,7 +178,7 @@ src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
 }
 .header #pet{
 	position: absolute;
-	top:5px;
+	top:0px;
 	right:0;
 }
 .header .form-group{
