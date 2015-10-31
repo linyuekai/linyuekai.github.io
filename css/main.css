@@ -624,6 +624,11 @@ src: url('font/minijianyaya.eot?#iefix') format('embedded-opentype'),
 .list .items img{
 	border: 1px solid #ddd;
 	width:100%;
+}
+.list .widgets .items img{
+	height: 290px;
+}
+.list .pages .items img{
 	height: 305px;
 }
 .list .items p{
