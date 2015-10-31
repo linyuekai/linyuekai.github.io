@@ -44,7 +44,6 @@
 
 <script>
 	var img = new Image();
-	img.src="images/cat.jpg";
 	img.onload = function(){
 
 		$(".draw").css("background","url("+img.src+") no-repeat");
@@ -72,6 +71,8 @@
 			},2000);
 		}
 	}
+	img.src="images/cat.jpg";
+	
 	function afterWelcome(){
 		$(".draw").hide().remove();
 		setTimeout(function(){
