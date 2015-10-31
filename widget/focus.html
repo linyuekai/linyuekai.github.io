@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>轮播图</title>
-	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/myfocus.js"></script>
 </head>
 <body>
@@ -19,7 +19,11 @@
 
 
 	<script>
-		$(".focus-win").myfocus();
+		$(".focus-win").myfocus({
+			width:1000,
+			height:562,
+			speed:1800
+		});
 	</script>
 </body>
 </html>
