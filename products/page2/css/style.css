@@ -1,0 +1,173 @@
+/*css reset*/
+*{margin:0;padding:0;}
+html,body{
+	font:13px "微软雅黑"; 
+	min-width:1160px;
+}
+table{
+	border-collapse:collapse;
+	border-spacing:0;
+}
+img{
+	border:0;
+}
+
+#container{
+	margin:0 auto;
+	width:90%;
+	padding:0 7px 15px 7px;
+}
+#head{
+	width:100%;
+	height: 61px;
+	margin: 22px 0 16px 0;
+}
+#head .h_l,
+#head .h_m,
+#head .h_r{
+	width:33.333333%;
+	*width:33%;
+	height: 100%;
+	float: left;
+}
+.h_l .icon_box{
+	height: 20px;
+}
+.h_l .icon_box .icon{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	vertical-align: text-bottom;
+	margin:0 5px;
+}
+.h_l .icon_box .personal{
+background: #5BC0DE;
+}
+.h_l .icon_box .department{
+	background: #5CB85C;
+}
+.h_l .btn_box{
+	margin-top: 7px;
+	height: 34px;
+}
+.btn{
+	display: inline-block;
+	height: 12px;
+	padding: 10px 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 12px;
+	cursor: pointer;
+}
+.h_l .btn_box .blue{
+	background: #428BCA;
+	color: #fff;
+	margin-right: 7px;
+}
+.h_l .btn_box .act{
+	background: #E6E6E6;
+}
+#head .h_m{
+	padding-top:23px;
+	height: 38px;
+}
+.h_m h1{
+	font-family: "宋体";
+	font-size: 33px;
+	text-align: center;
+
+}
+#head .h_r{
+	padding-top: 27px;
+	height: 34px;
+}
+.h_r .btn{
+	font-size: 12px;
+	float: right;
+	margin-left:11px; 
+}
+
+#calendar{
+	width:100%;
+}
+.disabled{
+	background: #F8F9FB;
+}
+#calendar td{
+	border: 1px solid #ddd;
+}
+#calendar thead td{
+	height: 36px;
+	background: #F5F5F5;
+	text-align: center;
+	font:13px "微软雅黑";
+}
+
+#calendar tbody td{
+	width:14.2857%;
+	min-width: 173px;
+}
+#calendar tbody td.days{
+	cursor: pointer;
+}
+#calendar tbody td.days:hover{
+	background: #F8F9FB;
+}
+#calendar tbody td div{
+	height: 100%;
+}
+#calendar tbody td div .td_head{
+	height: 20px;
+	padding-top: 8px;
+}
+#calendar tbody td div .td_head span{
+	display: inline-block;
+	padding:5px 0 5px 8px; 
+	line-height: 10px;
+}
+#calendar tbody td div .td_body{
+	min-height: 61px;
+	_width:61px;
+	padding:0 8px 10px 8px;
+}
+#calendar tbody td div .td_body p{
+	width:100%;
+	height: 26px;
+	line-height: 26px;
+	margin-top: 4px;
+	background: #5CB85C;
+	border-radius: 3px;
+	color: #fff;
+
+}
+#calendar tbody td div .td_body p:hover{
+	background: #5e5e5e;
+}
+.td_body p span{
+	padding-left: 3px;
+}
+.td_body p .time{
+	float: left;
+	width:35px;
+}
+.td_body p .transaction{
+	float: left;
+	width:75px;
+	white-space:nowrap;  
+	overflow: hidden;
+	text-overflow:ellipsis;
+}
+.edit,.del{
+	width: 13px;
+	height: 13px;
+	float: right;
+	margin:6px 2px;
+	cursor: pointer;
+}
+.edit{
+	background: url(../images/edit.gif) no-repeat right center;
+}
+.del{
+	background: url(../images/del.gif) no-repeat right center;
+}

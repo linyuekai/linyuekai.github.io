@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Day To Do List</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!--[if lte IE 8]> 
+		<script src="js/json2.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/calendar.js"></script>
+
+</head>
+<body>
+	<div id="container">
+	<div id="head">
+		<div class="h_l">
+			<div class="icon_box">
+				个人：<span class="icon personal"></span>
+				部门：<span class="icon department"></span>
+			</div>
+			<div class="btn_box">
+				<span class="btn blue newPlan">新建日程</span>
+				<span class="btn blue export">导出</span>
+				<span class="btn wview">周视图</span>
+				<span class="btn mview act">月视图</span>
+				<span id="cur" class="btn">当月</span>
+			</div>
+		</div>
+		<div class="h_m">
+			<h1><span id="year">2015</span>年<span id="month">07</span>月</h1>
+		</div>
+		<div class="h_r">
+			<span id="next" class="btn">&gt;</span>
+			<span id="prev" class="btn">&lt;</span>
+		</div>
+	</div>
+		<table id="calendar">
+			<thead>
+				<tr>
+					<td>星期一</td>
+					<td>星期二</td>
+					<td>星期三</td>
+					<td>星期四</td>
+					<td>星期五</td>
+					<td>星期六</td>
+					<td>星期日</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+					<td class="days">
+						<div>
+							<div class="td_head">
+								<span></span>
+							</div>
+							<div class="td_body"></div>
+						</div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
